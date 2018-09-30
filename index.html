@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+  <html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <title>zadanie nr 1</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+   <!-- <meta name="viewport" content="width=desvice-width, initial-scale=1.0">-->
+    <meta name="viewport" content="initial-scale=1">
+
+
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="top_logo">
+            <img src="img/top_logo.png" alt="logo" style="height: 131px;">
+        </div>
+        <p id="message" class="alert-error"></p>
+        
+        <div id="leftColumn">
+           
+
+            <div id="registerForm">
+              <div class="headers">
+                 <h2>Register Form</h2>
+              </div>
+            <div class="form-errors">
+                </div>
+                <form action="#" name="myForm" id="form">
+
+
+                    <div class="input">
+                        <span id="nameError" class="nameError"></span>
+                        <label class="flaticon-avatar">
+                           
+                        </label>
+                        <input type="text" placeholder="Username" name="name" id="username" pattern="" required="" class="username1 form-error">
+                    </div>
+                    <div class="input">
+
+                        <label id="passwordError" class="flaticon-padlock2 passwordError">
+                        </label>
+                        <input type="password" placeholder="Password" name="password" class="form-error" required="">
+
+                    </div>
+                    <div class="input">
+                        <label id="confirmError" class="flaticon-padlock">
+                        </label>
+                        <input type="password" placeholder="Confirm Password" name="confirm" class="form-error" required="">
+                    </div>
+                    <div class="input">
+                        <label class="flaticon-envelope">
+                        </label>
+                        <input type="email" placeholder="Email" name="email" class="form-error" required="">
+                        <!--required pattern="{3,10}"-->
+                    </div>
+                    <div class="input form-error">
+                        <label class="flaticon-placeholder">
+                        </label>
+                        <select name="Location">
+                            <option value="Your localization">
+                                Your localization
+                            </option>
+                            <option value="Katowice">
+                                Katowice
+                            </option>
+                            <option value="Warszawa">
+                                Warszawa
+                            </option>
+                            <option value="Kraków">
+                                Kraków
+                            </option>
+                        </select>
+
+                    </div>
+                    <div class="checkbox flaticon-placeholder">
+                        <label class="checkbox_label">
+                            <input type="checkbox">
+                            <span>
+                               </span> Send a copy to my Email
+                        </label>
+                    </div>
+
+                    <button class="button" type="submit" value="Wysli">
+                        Sing up
+                    </button>
+
+                </form>
+            </div>
+
+
+
+            <!--
+    SECTION EMAIL FORM
+    LEFT COLUMN
+    -->
+
+            <div id="boxEmail">
+
+                <div class="headers">
+                    <h2>Send Email</h2>
+                </div>
+
+                <form action="#" method="post" name="myForm" id="form2">
+
+                    <div class="input">
+                        <label class="flaticon-avatar">
+                        </label>
+                        <input type="text" placeholder="Your Name" name="name" required="">
+                    </div>
+
+
+                    <div class="input">
+                        <label class="flaticon-envelope">
+
+                        </label>
+                        <input type="email" placeholder="Your Email" name="email" required="">
+                    </div>
+
+                    <div>
+
+                        <textarea required="">
+                        </textarea>
+
+                    </div>
+                    <div>
+
+                        <div class="checkbox">
+                            <label class="checkbox_label">
+                                <input required="" type="checkbox"><span></span> Send a copy to my Email
+                            </label>
+                        </div>
+                        <button class="button" type="submit">Sing up</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- 
+SECTION SIGNINFORM FORM
+RIGHT COLUMN
+ -->
+        <div id="RightColumn">
+            
+
+            <div class="SignInForm">
+                <div class="headers">
+                  <h2>Sign In Form</h2>
+                </div>
+
+                <form action="#" method="post" name="myForm" id="form3">
+                    <div>
+
+                        <label class="flaticon-avatar">
+
+                        </label>
+                        <input class="input" type="text" placeholder="Name" required="">
+                    </div>
+                    <div>
+                        <span class="flaticon-padlock">
+
+                    </span>
+                        <input class="input" type="password" placeholder="password" required="">
+                    </div>
+                    <div class="checkbox">
+                        <label class="checkbox_label">
+                            <input type="checkbox" required=""><span></span>Remember me
+                        </label>
+                    </div>
+                    <button class="buttons" type="submit">Sing up</button>
+
+
+                </form>
+            </div>
+            <!-- 
+SECTION RECOVER FORM
+RIGHT COLUMN
+ -->
+          
+            <div class="RecoverForm">
+                <div class="headers">
+                  <h2>Recover Form</h2>
+                </div>
+
+                <form action="#" method="post" name="myForm" id="form4">
+                    <div class="input">
+                        <label class="nameError flaticon-envelope">
+                        </label>
+
+                        <input type="email" placeholder="Enter your Email" required="">
+
+                    </div>
+                    <div class="input">
+                        <label class="nameError flaticon-phone-call">
+                        </label>
+                        <input type="number" placeholder="Enter your phone number" required="">
+
+                    </div>
+                    <div>
+                        <button class="buttons" type="submit"> <span>Send</span>
+                        </button>
+                        <button class="buttons" type="submit"> <span>Done</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- 
+SECTION SUBSCIBRE FORM
+RIGHT COLUMN
+ -->
+            
+            <div class="SubscribeForm">
+                <div class="headers">
+                    <h2>Subscible Form</h2>
+                </div>
+                <form action="#" method="post" name="myForm" id="form5">
+                    <div class="input">
+                        <label class="nameError flaticon-avatar">
+                        </label>
+                        <input type="email" placeholder="Enter your email" name="fname" required="">
+                    </div>
+                    <div>
+                        <button class="buttons" type="submit"><span>Subscribe</span>
+                        </button>
+                        <button class="buttons" type="submit">
+                            <span>No, Thanks</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <span>
+	<img class="logo_down" src="img/down_logo.png" alt="logo_down">
+	</span>
+        </div>
+        <div id="down_logo">
+
+        </div>
+    </div>
+
+ <script>
+  
+
+   var elUsername = document.querySelector('#username');
+  var elMsg = document.querySelector('#nameError');
+
+  function checkUsername(minlength) {
+       if (elUsername.value.length < minlength) {
+
+        elMsg.textContent = 'The input must have min ' + minlength + ' characters.';
+
+       }else {
+        elMsg.innerHTML = '';
+     }
+  }
+
+  elUsername.addEventListener('blur',function(){
+    checkUsername(4);
+  } ,false);
+
+ //var  = document.getElementByTagName[name];
+
+ </script>
+</body>
+</html>
